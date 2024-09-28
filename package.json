@@ -1,0 +1,23 @@
+{
+  "name": "space-facts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaseHarding/space_facts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChaseHarding/space_facts/issues"
+  },
+  "homepage": "https://github.com/ChaseHarding/space_facts#readme",
+  "devDependencies": {
+    "sass": "^1.79.4"
+  }
+}
