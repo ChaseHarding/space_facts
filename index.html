@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Space Facts</title>
 </head>
 <body>
     <section class="top_display" id="top_display">
         <h1>space facts</h1>
-        <h2>An informative game aimed at testing your knowledge of our glaaxy and beyond.</h2>
-        <p>press the "enter" key to begin</p>
+        <h2>An informative game aimed at testing your knowledge of our galaxy and beyond.</h2>
     </section>
+    <div class="all_buttons">
+        <button id="start_button">Start Game</button>
+
+        <button id="how_to_button">How To Play</button>
+        <div id="how_to_box" class="how_to_box">
+          <div class="close_button" onclick="closeHowToPlayBox()">Close</div>
+          <h3>Welcome to Space Facts</h3>
+          <h4>How to Play:</h4>
+          <p>On the next screen, youll be asked to press enter, afterwards a short timer will run.
+            Once that timer finishes, you will have 10 seconds to answer the question.
+            After the timer runs out, the answer will be revealed, if you're correct, you'll gain a point.
+            If not, we have more questions, don't worry
+          </p>
+        </div>
+    </div>
 
 </body>
 </html>
