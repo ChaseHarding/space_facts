@@ -1,4 +1,5 @@
-import { spaceFacts } from "./questionsData";
+import { spaceFacts } from "./questionsData.js";
+import { setUpStartButton } from "./startGame.js";
 
 function displayCard(fact) {
     const card = document.createElement('div');
@@ -10,5 +11,10 @@ function displayCard(fact) {
     return card
 }
 
-const container = document.querySelector('.card-container');
-spaceFacts.forEach(fact => container.appendChild(displayCard(fact)))
+if (document.querySelector('.card-container')) {
+    const container = document.querySelector('.card-container');
+    spaceFacts.forEach(fact => container.appendChild(displayCard(fact)))
+}
+
+
+
