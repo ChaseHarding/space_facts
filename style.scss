@@ -8,9 +8,35 @@ body {
     background: $primary-gradient;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    h1 {
-        font-size: 2rem;
-        color: white;
+
+    .top_display {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 2rem;
+            color: white;
+            text-transform: uppercase;
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
     }
+
+
+}
+
+//animations
+@keyframes floating {
+    0% { transform: translate(0, 0px); }
+    50% { transform: translate(0, 15px); }
+    100% { transform: translate(0, -0px); }
 }

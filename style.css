@@ -7,9 +7,35 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-body h1 {
+body .top_display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .top_display h1 {
   font-size: 2rem;
   color: white;
+  text-transform: uppercase;
+  animation: floating 3s ease-in-out infinite;
+}
+body .top_display h2 {
+  color: white;
+}
+body .top_display p {
+  color: white;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
